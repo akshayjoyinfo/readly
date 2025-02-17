@@ -16,3 +16,12 @@
 - **ASP.NET Identity for Authentication**  
 - **Minimal APIs**
 - **Docker & Kubernetes Ready**  
+
+
+
+### **🛠️Devoloper ReadMe**
+Since we used CPM Central Package Management so use this setting for all CSPROJ files
+
+    <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    </PropertyGroup>
