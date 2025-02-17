@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E2DA20AA-28D1-455C-BF50-C49A8F831633}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+		README.md = README.md
+		NuGet.config = NuGet.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3EB0390D-D9FF-4D15-B023-67C307604F54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readly.Api", "src\Readly.Api\Readly.Api.csproj", "{FC4A2800-8223-4CBF-9A61-545421890DA8}"
+EndProject
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC4A2800-8223-4CBF-9A61-545421890DA8} = {3EB0390D-D9FF-4D15-B023-67C307604F54}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC4A2800-8223-4CBF-9A61-545421890DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC4A2800-8223-4CBF-9A61-545421890DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC4A2800-8223-4CBF-9A61-545421890DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC4A2800-8223-4CBF-9A61-545421890DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
