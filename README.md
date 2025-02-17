@@ -23,5 +23,11 @@
 Since we used CPM Central Package Management so use this setting for all CSPROJ files
 
     <PropertyGroup>
-    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     </PropertyGroup>
+
+### References 
+
+https://github.com/ardalis/CleanArchitecture/tree/main/src/Clean.Architecture.UseCases/Contributors
+https://github.com/jasontaylordev/CleanArchitecture/blob/8f5a963d4b4af3c199061ca3eb50d6a919156ae6/src/Web/GlobalUsings.cs
+https://github.com/dotnet/eShop/tree/main
