@@ -1,5 +1,29 @@
+@HTTPS_Api_HostAddress = https://localhost:7261
+
+# Testing WeatherForecast Requests
 
 GET {{HTTPS_Api_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+GET {{HTTPS_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{HTTPS_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{HTTPS_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{HTTPS_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
