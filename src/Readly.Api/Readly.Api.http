@@ -4,26 +4,3 @@
 
 GET {{HTTPS_Api_HostAddress}}/weatherforecast/
 Accept: application/json
-
-###
-
-GET {{HTTPS_Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
-
-GET {{HTTPS_Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
-
-GET {{HTTPS_Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
-
-GET {{HTTPS_Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
-

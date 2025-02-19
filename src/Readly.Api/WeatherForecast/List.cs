@@ -1,10 +1,6 @@
-﻿using System.Linq;
+﻿namespace Readly.Api.WeatherForecast;
 
-#pragma warning disable CS9113 // Parameter is unread.
-
-namespace Readly.Api.WeatherForecast;
-
-public class List(IMediator _mediator) : EndpointWithoutRequest<WeatherForecastListResponse>
+public class List(ILogger<List> _logger) : EndpointWithoutRequest<WeatherForecastListResponse>
 {
     public override void Configure()
     {
@@ -15,6 +11,7 @@ public class List(IMediator _mediator) : EndpointWithoutRequest<WeatherForecastL
 
     public override async Task HandleAsync(CancellationToken cancellationToken)
     {
+        _logger.LogInformation("Retrieving weather forecasts");
         var summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -30,7 +27,6 @@ public class List(IMediator _mediator) : EndpointWithoutRequest<WeatherForecastL
             .ToList();
 
         await Task.CompletedTask;
-
-        Response = new WeatherForecastListResponse() { WeatherForecasts = forecasts };
+        Response = new WeatherForecastListResponse { WeatherForecasts = forecasts };
     }
 }

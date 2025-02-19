@@ -16,6 +16,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3EB0390D-D9F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readly.Api", "src\Readly.Api\Readly.Api.csproj", "{FC4A2800-8223-4CBF-9A61-545421890DA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readly.Shared", "src\Readly.Shared\Readly.Shared.csproj", "{59CC14D5-C2DA-4547-8157-FFAED77ECD1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readly.Application", "src\Readly.Application\Readly.Application.csproj", "{48A00523-BDA8-4A48-8942-F05A7608CBFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readly.Domain", "src\Readly.Domain\Readly.Domain.csproj", "{1CEFD106-3F87-4833-9C42-9A795A6C3FA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readly.Infrastructure", "src\Readly.Infrastructure\Readly.Infrastructure.csproj", "{6CE9EB17-102D-4892-8BFD-4BB4C32D7A25}"
+EndProject
 
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,11 +32,31 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FC4A2800-8223-4CBF-9A61-545421890DA8} = {3EB0390D-D9FF-4D15-B023-67C307604F54}
+		{59CC14D5-C2DA-4547-8157-FFAED77ECD1E} = {3EB0390D-D9FF-4D15-B023-67C307604F54}
+		{48A00523-BDA8-4A48-8942-F05A7608CBFB} = {3EB0390D-D9FF-4D15-B023-67C307604F54}
+		{1CEFD106-3F87-4833-9C42-9A795A6C3FA7} = {3EB0390D-D9FF-4D15-B023-67C307604F54}
+		{6CE9EB17-102D-4892-8BFD-4BB4C32D7A25} = {3EB0390D-D9FF-4D15-B023-67C307604F54}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FC4A2800-8223-4CBF-9A61-545421890DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FC4A2800-8223-4CBF-9A61-545421890DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC4A2800-8223-4CBF-9A61-545421890DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC4A2800-8223-4CBF-9A61-545421890DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59CC14D5-C2DA-4547-8157-FFAED77ECD1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59CC14D5-C2DA-4547-8157-FFAED77ECD1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59CC14D5-C2DA-4547-8157-FFAED77ECD1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59CC14D5-C2DA-4547-8157-FFAED77ECD1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A00523-BDA8-4A48-8942-F05A7608CBFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A00523-BDA8-4A48-8942-F05A7608CBFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A00523-BDA8-4A48-8942-F05A7608CBFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A00523-BDA8-4A48-8942-F05A7608CBFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CEFD106-3F87-4833-9C42-9A795A6C3FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CEFD106-3F87-4833-9C42-9A795A6C3FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CEFD106-3F87-4833-9C42-9A795A6C3FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CEFD106-3F87-4833-9C42-9A795A6C3FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CE9EB17-102D-4892-8BFD-4BB4C32D7A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE9EB17-102D-4892-8BFD-4BB4C32D7A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE9EB17-102D-4892-8BFD-4BB4C32D7A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE9EB17-102D-4892-8BFD-4BB4C32D7A25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,15 +1,16 @@
-﻿using FastEndpoints;
-using FastEndpoints.Swagger;
+﻿using ILogger = Serilog.ILogger;
 
-namespace Readly.Api.Configurations;
+namespace Readly.Api.Dependencies;
 
 public static class MiddlewareConfig
 {
-    public static async Task<IApplicationBuilder> UseAppMiddlewareAndSeedDatabase(this WebApplication app)
+    public static async Task<IApplicationBuilder> UseReadlyApiMiddleware(this WebApplication app, ILogger logger)
     {
         if (app.Environment.IsDevelopment())
         {
-            app.UseDeveloperExceptionPage();
+            //app.UseDeveloperExceptionPage();
+            app.UseDefaultExceptionHandler(); // from FastEndpoints
+            app.UseHsts();
             //app.UseShowAllServicesMiddleware(); // see https://github.com/ardalis/AspNetCoreStartupServices
         }
         else
@@ -22,8 +23,7 @@ public static class MiddlewareConfig
             .UseSwaggerGen(); // Includes AddFileServer and static files middleware
 
         app.UseHttpsRedirection(); // Note this will drop Authorization headers
-
-        //await SeedDatabase(app);
+        logger.Information("===>>> Used ReadlyApiMiddleware ");
         await Task.CompletedTask;
         return app;
     }
