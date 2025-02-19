@@ -22,8 +22,10 @@
 
 ### **🛠️ Migrations:**
 
-    # Create Migration / Add Migration 
-    # Run Migration from src/ folder
+Create Migration / Add Migration 
+
+Run Migration from src/ folder
+
     dotnet ef migrations add "InitialMigration" --context ReadlyDbContext --project Readly.Infrastructure --startup-project Readly.API --output-dir Data/Migrations
     dotnet ef database update --context ReadlyDbContext --project Readly.Infrastructure --startup-project Readly.API
 
