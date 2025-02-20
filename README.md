@@ -22,7 +22,7 @@
 
 ### **🛠️ Migrations:**
 
-Create Migration / Add Migration 
+Create Migration / Add Migration
 
 Run Migration from src/ folder
 
