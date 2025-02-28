@@ -1,4 +1,7 @@
-﻿using System.Text;
+﻿using System.Reflection;
+using System.Text;
+using FluentValidation;
+using MediatR.Extensions.FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.IdentityModel.Tokens;
@@ -28,6 +31,7 @@ public static class WebApiConfigs
         {
             o.ShortSchemaNames = true;
         });
+        
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options =>
             {
@@ -46,7 +50,7 @@ public static class WebApiConfigs
                     )
                 };
             });
-
+        services.AddDatabaseConfigs(logger, configuration);
         logger.Information("===>>> Adding WebApi Configs");
         return services;
     }

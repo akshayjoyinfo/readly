@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using FluentValidation;
 using Microsoft.AspNetCore.Diagnostics;
 using Readly.Shared.Common;
 
@@ -20,6 +21,25 @@ public class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger) : IE
             traceId,
             spanId
         );
+        
+        
+        if (exception is ValidationException validationException)
+        {
+            httpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
+
+            var errors = validationException.Errors
+                .Select(x => new { Field = x.PropertyName, Message = x.ErrorMessage })
+                .ToList();
+
+            await httpContext.Response.WriteAsJsonAsync(new
+            {
+                Message = "Validation failed",
+                Errors = errors
+            }, cancellationToken: cancellationToken);
+
+            return true; // Exception was handled
+        }
+
 
         var customProblemDetails = new ReadlyProblemDetails
         {

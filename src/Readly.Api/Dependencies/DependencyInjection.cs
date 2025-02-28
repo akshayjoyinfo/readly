@@ -1,4 +1,5 @@
-﻿using Readly.Infrastructure;
+﻿using Readly.Application;
+using Readly.Infrastructure;
 using ILogger = Serilog.ILogger;
 
 namespace Readly.Api.Dependencies;
@@ -15,9 +16,9 @@ public static class DependencyInjection
         });
 
 
-        builder.Services.AddMediatrConfigs(logger)
+        builder.Services
             .AddWebApiConfigs(logger, configuration)
-            .AddDatabaseConfigs(logger, configuration)
-            .AddInfrastructure();
+            .AddApplicationServices()
+            .AddInfrastructureConfigs();
     }
 }

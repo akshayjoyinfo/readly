@@ -7,7 +7,7 @@ namespace Readly.Infrastructure;
 
 public static class DependencyInjection
 {
-    public static IServiceCollection AddInfrastructure(this IServiceCollection services)
+    public static IServiceCollection AddInfrastructureConfigs(this IServiceCollection services)
     {
         services.AddScoped<IReadlyDbContext>(provider =>
             provider.GetService<ReadlyDbContext>() ?? throw new InvalidOperationException());
